@@ -23,12 +23,13 @@ namespace examWPF
     {
         string name_;
         string timerelise_;
-        TaskList taskList = new TaskList();
+        //Task Task = new Task();
+        //TaskList taskList = new TaskList();
         
         public MainWindow()
         {
             InitializeComponent();
-
+            TaskList taskList = new TaskList();
         }
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {

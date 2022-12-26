@@ -20,7 +20,7 @@ namespace examWPF
     /// </summary>
     public partial class AddTask : Window
     {
-        Task task =new Task();
+      
         public AddTask()
         {
             InitializeComponent();

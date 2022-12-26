@@ -3,23 +3,27 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace examWPF
 {
     internal class TaskList
     {
-        ObservableCollection<Task> Tasks = null;
+        List<Task> Tasks = null;
 
         public TaskList()
         {
-            Tasks = new ObservableCollection<Task>();
+            Tasks = new List<Task>();
         }
 
         public void AddTask()
         {
             Tasks.Add(new Task( ) );
-        } 
+        }
 
+        Timer timer = new Timer();
+
+      
     }
 }
