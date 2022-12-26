@@ -14,7 +14,7 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <GroupBox>
-                <DataGrid AutoGenerateColumns="False"
+                <ListView AutoGenerateColumns="False"
                       ItemsSource="{Binding Path=Products}"
                       CanUserAddRows="False"
                       SelectedItem="{Binding Path=SelectProduct}"
@@ -41,7 +41,7 @@
                                         IsReadOnly="True"/>
                         <!--промежуточная сумма продукции-->
                     </DataGrid.Columns>
-                </DataGrid>
+                </ListView>
 
 
 
